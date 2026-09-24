@@ -75,6 +75,8 @@ export default function SuggestionCard({
               alt={name}
               fill
               sizes="60px"
+              loading="lazy"
+              decoding="async"
               className="object-cover"
             />
           </div>

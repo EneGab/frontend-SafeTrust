@@ -34,6 +34,8 @@ export default function ApartmentCard({
           alt={apartment.name}
           width={420}
           height={280}
+          loading="lazy"
+          decoding="async"
           className="h-[170px] w-full object-cover"
         />
         {apartment.promoted ? (
