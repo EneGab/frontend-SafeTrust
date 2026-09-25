@@ -6,6 +6,7 @@ export interface WishlistCardProps {
   name: string;
   apartments: Apartment[];
   savedAt: string;
+  priority?: boolean;
   onClick?: () => void;
 }
 
@@ -13,6 +14,7 @@ export function WishlistCard({
   name,
   apartments,
   savedAt,
+  priority = false,
   onClick,
 }: WishlistCardProps) {
   const images = apartments
